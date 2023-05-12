@@ -1,0 +1,48 @@
+Y = ('''
+888                                                          
+888                                                          
+888                                                          
+888888888d888 .d88b.  8888b. .d8888b 888  888888d888 .d88b.  
+888   888P"  d8P  Y8b    "88b88K     888  888888P"  d8P  Y8b 
+888   888    88888888.d888888"Y8888b.888  888888    88888888 
+Y88b. 888    Y8b.    888  888     X88Y88b 888888    Y8b.     
+ "Y888888     "Y8888 "Y888888 88888P' "Y88888888     "Y8888 
+''')
+X = ('''                                                                      
+88                                         88                          
+88                                   ,d    ""                          
+88                                   88                                
+88,dPPYba,  88       88 8b,dPPYba, MM88MMM 88 8b,dPPYba,   ,adPPYb,d8  
+88P'    "8a 88       88 88P'   `"8a  88    88 88P'   `"8a a8"    `Y88  
+88       88 88       88 88       88  88    88 88       88 8b       88  
+88       88 "8a,   ,a88 88       88  88,   88 88       88 "8a,   ,d88  
+88       88  `"YbbdP'Y8 88       88  "Y888 88 88       88  `"YbbdP"Y8  
+                                                           aa,    ,88  
+                                                            "Y8bbdP" 
+''')
+print(X + Y )
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+print("Welcome to Treasure Island. Your mission is to find the treasure.")
+answer =input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n').lower()
+if answer == "left":
+  answer2=input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. \n').lower()
+  if answer2 == "wait":
+    answer3 = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n").lower()
+    if answer3 == "red":
+      print("It's a room full of fire. Game Over.")
+    elif answer3 == "yellow":
+      print("You found the treasure! You Win!")
+    elif answer3 == "blue":
+      print("You enter a room of beasts. Game Over.")
+    else:
+      print("You chose a door that doesn't exist. Game Over.")
+  else:
+    print("You get attacked by an angry trout. Game Over.")
+else:
+  print("You fell into a hole. Game Over.")
